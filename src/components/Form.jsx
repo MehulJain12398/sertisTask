@@ -30,7 +30,8 @@ const Form = () => {
     },
     phoneNumber: {
       regex: /^[0-9]{1,16}$/,
-      errorMessage: "The phone number is too long.",
+      errorMessage: "Only digits are allowed",
+      maxLengthErrorMessage:"The phone number is too long."
     },
   });
 

@@ -18,8 +18,9 @@ const useFormValidation = (initialData, validationRules, isEdit = false, setIsEd
       ...prev,
       [name]: value,
     }));
-    // Apply validation rules from the provided object
+
     const validationRule = validationRules[name];
+    console.log(validationRule);
     if (validationRule) {
       if (value.match(validationRule.regex)) {
         setFormErrors((prev) => ({
@@ -27,6 +28,12 @@ const useFormValidation = (initialData, validationRules, isEdit = false, setIsEd
           [name]: "",
         }));
       } else {
+        if(name === "phoneNumber" && value > 16){
+          setFormErrors((prev) => ({
+            ...prev,
+            [name]: validationRule.maxLengthErrorMessage,
+          }));
+        }else
         setFormErrors((prev) => ({
           ...prev,
           [name]: validationRule.errorMessage,
@@ -40,7 +47,7 @@ const useFormValidation = (initialData, validationRules, isEdit = false, setIsEd
     if (!formUpdatedData[name]) {
       setFormErrors((prev) => ({
         ...prev,
-        [name]: "Please fill this field",
+        [name]: "Field is required",
       }));
     }
   };
