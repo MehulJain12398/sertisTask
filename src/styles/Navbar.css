@@ -1,0 +1,9 @@
+.navbar{
+    width: 100%;
+    padding: 1.8rem;
+}
+
+.navbar__logo{
+    height: 4.4rem;
+    margin-left: 5rem;
+}

@@ -1,0 +1,84 @@
+.button-container {
+    display: inline-block;
+  }
+
+  @media (max-width:768px){
+    .button_rotate{
+      transform: rotate(90deg);
+    }
+  }
+
+  .icon,
+  .editIcon {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .icon:hover,
+  .editIcon:hover {
+    background-color: var(--hovering-button);
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(37, 205, 217, 0.5);
+    border-color: none;
+  }
+
+  .confirm,
+  .disable_button {
+    background-color: transparent;
+    border: 0.1rem solid var(--black);
+    cursor: pointer;
+    border-radius: 10rem;
+    padding: 1rem 2rem;
+    border-color: var(--black);
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+  }
+  
+  .disable_button {
+    cursor: not-allowed;
+    border-color: var(--grey-400);
+    color: var(--grey-400);
+  }
+  
+
+  .disable_button svg path{
+    fill:var(--grey-400)
+  }
+  
+  .confirm:hover {
+    background-color: var(--hovering-button);
+    transform: scale(1.05);
+    box-shadow: 0 0 2rem rgba(37, 205, 217, 0.5);
+    border-color: none;
+    color: var(--white) ;
+    border:none;
+  }
+
+  .confirm:hover svg path{
+    fill:var(--white)
+  }
+ 
+  .button_right{
+    display: flex;
+   justify-content: flex-end;
+  }
+
+
+
+  
+  
+  
+  
+  

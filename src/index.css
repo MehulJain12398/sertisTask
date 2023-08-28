@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-800:#0F5257;
+  --primary-700:#15737A;
+  --primary-600:#1EA5AE;
+  --primary-500:#25CDD9;
+  --primary-400:#74E0E7;
+  --primary-300:#B9EFF3;
+  --primary-200:#E5F9FB;
+  --grey-800:#1B1D22;
+  --grey-700:#3A3F4A;
+  --grey-600:#515866;
+  --grey-500:#81899C;
+  --grey-400:#AFB4C0;
+  --grey-300:#DDDFE4;
+  --grey-200:#F4F4F6;
+  --black:#000000;
+  --white:#FFFFFF;
+  --error-case:#FF5454;
+  --success-case:#0DCA86;
+  --hovering-button:#25CDD9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+ {
+  margin-bottom: 1rem;
+}
+
+/* headlines css for different styles of text */
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 8rem;
+  line-height: 8.8rem;
+}
+
+h2{
+  font-family: 'Old Standard TT', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 7.2rem;
+  line-height: 8rem;
+}
+
+h3{
+  font-family: 'Old Standard TT', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+}
+
+h4{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+}
+
+h5{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 4.8rem;
+}
+
+@media (max-width:768px){
+  h4{
+    font-size: 4.4rem;
+  }
+}
+
+
+
+.body1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.body2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+
