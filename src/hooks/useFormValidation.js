@@ -20,7 +20,6 @@ const useFormValidation = (initialData, validationRules, isEdit = false, setIsEd
     }));
 
     const validationRule = validationRules[name];
-    console.log(validationRule);
     if (validationRule) {
       if (value.match(validationRule.regex)) {
         setFormErrors((prev) => ({

@@ -18,19 +18,20 @@ const EditForm = () => {
   } = useFormValidation(formData, {
     firstName: {
       regex: /^[A-Za-z\s]+$/,
-      errorMessage: "Only alphabets and space",
+      errorMessage: "This field can only contain alphabets (A-z) and space.",
     },
     lastName: {
       regex: /^[A-Za-z\s]+$/,
-      errorMessage: "Only alphabets and space",
+      errorMessage: "This field can only contain alphabets (A-z) and space.",
     },
     email: {
-      regex: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/,
-      errorMessage: "Invalid Email",
+      regex: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.(com|io|co)$/,
+      errorMessage: "This field has invalid email format (example@email.com).",
     },
     phoneNumber: {
       regex: /^[0-9]{1,16}$/,
-      errorMessage: "Only numbers",
+      errorMessage: "Only digits are allowed",
+      maxLengthErrorMessage:"The phone number is too long."
     },
   }, isEdit, setIsEdit);
 
