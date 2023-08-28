@@ -1,4 +1,4 @@
-#REACT APP
+# REACT APP
 
-step 1: npm install or npm i
-step 2: npm run dev
+- npm install or npm i
+- npm run dev
